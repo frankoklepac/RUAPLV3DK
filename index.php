@@ -102,7 +102,7 @@ if (!empty($_POST)) {
         $registrants = $conn->query($sql_select);
 
         if ($registrants->num_rows > 0) {
-            echo "<h2>People who are registered:</h2>";
+            echo "<h2>People who are registered here:</h2>";
             echo "<table>";
             echo "<tr><th>Name</th><th>Email</th><th>Date</th></tr>";
             while ($registrant = $registrants->fetch_assoc()) {
